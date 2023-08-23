@@ -14,7 +14,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-       
+
+        <nav className={styles.boxSup}>
+          <div className={styles.boxSup_logo}>logo</div>
+          <div className={styles.boxSup_menu}>menú</div>
+        </nav>
+
+        <section className={styles.boxMedio}>
+          <div className={styles.boxMedio_filtros}>filtros</div> {/* Aside? */}
+          <div className={styles.boxMedio_personas}>personas</div>
+          <div className={styles.boxMedio_equipo}>mi equipo</div>
+        </section>
+
+        <footer className={styles.boxInf}>
+          Footer
+        </footer>
+
       </main>
     </>
   )

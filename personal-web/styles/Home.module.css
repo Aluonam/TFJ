@@ -1,8 +1,78 @@
+
 .main {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+ 
+  
+
+  /* GRID */
+  display: grid;
+  grid-template-columns: 15% 60% 25%;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas: 
+    "boxSup boxSup boxSup"
+    "boxMedio boxMedio boxMedio"
+    "boxInf boxInf boxInf"
+}
+
+.boxSup{
+  grid-area: boxSup ;
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+  border: 2px solid blue;
+  
+}
+
+.boxMedio{
+  grid-area: boxMedio;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(255, 255, 0);
+}
+
+.boxInf{
+  grid-area: boxInf;
+
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(255, 0, 81);
+}
+
+.boxSup_logo{
+  width: 20%;
+  height: 100%;
+  border: 2px solid rgb(0, 166, 255);
+}
+
+.boxSup_menu{
+  width: 80%;
+  height: 100%;
+  border: 2px solid rgb(0, 166, 255);
+}
+
+.boxMedio_filtros{
+  width: 20%;
+  height: 100%;
+  border: 2px solid rgb(255, 238, 0);
+}
+
+.boxMedio_personas{
+  width: 50%;
+  height: 100%;
+  border: 2px solid rgb(255, 153, 0);
+}
+
+.boxMedio_equipo{
+  width: 20%;
+  height: 100%;
+  border: 2px solid rgb(255, 208, 0);
 }
