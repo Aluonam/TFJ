@@ -2,56 +2,60 @@ import React, { useState } from 'react';
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
 const items = [
+    // ------------------------------- BLOQUE 1 ----------------------
   {
-    label: 'Navigation One',
+    label: 'Información',
     key: 'mail',
-    icon: <MailOutlined />,
+    // icon: <MailOutlined />,
   },
+    // ------------------------------- BLOQUE 2 ----------------------
   {
-    label: 'Navigation Two',
+    label: 'Personal',
     key: 'app',
-    icon: <AppstoreOutlined />,
+    // icon: <AppstoreOutlined />,
     disabled: true,
   },
+    // ------------------------------- BLOQUE 3 ----------------------
   {
-    label: 'Navigation Three - Submenu',
+    label: 'Otros equipos',
     key: 'SubMenu',
-    icon: <SettingOutlined />,
+    // icon: <SettingOutlined />,
     children: [
+      // {
+      //   type: 'group',
+      //   label: 'Item 1',
+      //   children: [
+      //     {
+      //       label: 'Option 1',
+      //       key: 'setting:1',
+      //     },
+      //     {
+      //       label: 'Option 2',
+      //       key: 'setting:2',
+      //     },
+      //   ],
+      // },
       {
         type: 'group',
-        label: 'Item 1',
+        // label: 'Item 2',
         children: [
           {
-            label: 'Option 1',
-            key: 'setting:1',
-          },
-          {
-            label: 'Option 2',
-            key: 'setting:2',
-          },
-        ],
-      },
-      {
-        type: 'group',
-        label: 'Item 2',
-        children: [
-          {
-            label: 'Option 3',
+            label: 'personal',
             key: 'setting:3',
           },
           {
-            label: 'Option 4',
+            label: 'red',
             key: 'setting:4',
           },
         ],
       },
     ],
   },
+  // ------------------------------- BLOQUE 4 ----------------------
   {
     label: (
       <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
-        Navigation Four - Link
+        Mi equipo
       </a>
     ),
     key: 'alipay',
