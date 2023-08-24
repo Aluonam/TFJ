@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import MenuAnt from '@/components/MenuAnt'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +18,9 @@ export default function Home() {
 
         <nav className={styles.boxSup}>
           <div className={styles.boxSup_logo}>logo</div>
-          <div className={styles.boxSup_menu}>menú</div>
+          <div className={styles.boxSup_menu}>
+            <MenuAnt></MenuAnt>
+          </div>
         </nav>
 
         <section className={styles.boxMedio}>
